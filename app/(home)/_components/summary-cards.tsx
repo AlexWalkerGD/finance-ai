@@ -33,12 +33,12 @@ const SummaryCards = async ({
         <CardInfo
           icon={<PiggyBankIcon size={16} />}
           title="Investido"
-          amount={depositsTotal}
+          amount={investmentsTotal}
         />
         <CardInfo
           icon={<TrendingUpIcon size={16} className="text-primary" />}
           title="Receita"
-          amount={investmentsTotal}
+          amount={depositsTotal}
         />
         <CardInfo
           icon={<TrendingDownIcon size={16} className="text-red-500" />}
