@@ -7,9 +7,16 @@ interface CardInfoProps {
   title: string;
   amount: number;
   size?: "small" | "large";
+  userCanAddTransactions?: boolean;
 }
 
-const CardInfo = ({ icon, title, amount, size = "small" }: CardInfoProps) => {
+const CardInfo = ({
+  icon,
+  title,
+  amount,
+  size = "small",
+  userCanAddTransactions,
+}: CardInfoProps) => {
   return (
     <Card className={`${size === "large" ? "bg-zinc-800" : ""} `}>
       <CardHeader className="flex-row items-center gap-4">
@@ -30,7 +37,11 @@ const CardInfo = ({ icon, title, amount, size = "small" }: CardInfoProps) => {
           }).format(amount)}
         </p>
 
-        {size === "large" && <AddTransactionButton />}
+        {size === "large" && (
+          <AddTransactionButton
+            userCanAddTransaction={userCanAddTransactions}
+          />
+        )}
       </CardContent>
     </Card>
   );
