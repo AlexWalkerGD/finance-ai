@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky && prisma generate"
+    "prepare": "husky"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.7.5",
@@ -50,6 +50,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.16",
+    "husky": "^9.1.7",
     "postcss": "^8",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "prisma": "^7.8.0",
