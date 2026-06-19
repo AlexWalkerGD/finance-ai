@@ -76,7 +76,8 @@ const AiReportButton = ({ month, hasPremiumPlan }: AiReportButtonProps) => {
             <DialogHeader>
               <DialogTitle>Relatório IA</DialogTitle>
               <DialogDescription>
-                Você precisa de um plano premium para gerar relatórios com IA.
+                Você precisa assinar um plano premium para gerar relatórios com
+                IA.
               </DialogDescription>
             </DialogHeader>
 
