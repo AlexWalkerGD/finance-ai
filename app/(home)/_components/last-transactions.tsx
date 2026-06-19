@@ -34,7 +34,7 @@ const LastTransactions = ({ lastTransactions }: LastTransactionProps) => {
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle className="font-bold">Últimas Transações</CardTitle>
         <Button variant="outline" className="rounded-full font-bold" asChild>
-          <Link href="/transactions">Ver mais</Link>
+          <Link href="/transaction">Ver mais</Link>
         </Button>
       </CardHeader>
       <CardContent className="space-y-6">
